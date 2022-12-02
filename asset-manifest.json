@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Archa-React-App/static/css/main.9124d32d.css",
+    "main.js": "/Archa-React-App/static/js/main.f7feeba6.js",
+    "static/js/787.e82af517.chunk.js": "/Archa-React-App/static/js/787.e82af517.chunk.js",
+    "static/media/banner.jpg": "/Archa-React-App/static/media/banner.52db3880cb7670150fc7.jpg",
+    "index.html": "/Archa-React-App/index.html",
+    "main.9124d32d.css.map": "/Archa-React-App/static/css/main.9124d32d.css.map",
+    "main.f7feeba6.js.map": "/Archa-React-App/static/js/main.f7feeba6.js.map",
+    "787.e82af517.chunk.js.map": "/Archa-React-App/static/js/787.e82af517.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9124d32d.css",
+    "static/js/main.f7feeba6.js"
+  ]
+}
