@@ -1,0 +1,36 @@
+#companyLogo .container .imgBox {
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+}
+#companyLogo .container .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+}
+#companyLogo .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5rem 3rem;
+    place-items: center;
+}
+@media (max-width: 991px) {
+    #companyLogo .container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+}
+@media (max-width: 768px) {
+    #companyLogo .container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+}
+@media (max-width: 560px) {
+    #companyLogo .container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}

@@ -1,0 +1,28 @@
+#banner {
+    width: 100%;
+    height: 65vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #443A39;
+    opacity: 0.4;
+}
+#banner h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    font-family: var(--primaryFont);
+    z-index: 5;
+  }

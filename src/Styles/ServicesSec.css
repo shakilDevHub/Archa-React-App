@@ -1,0 +1,33 @@
+.serviceSec{
+    background: var(--secondaryColor);
+}
+.serviceCard{
+    padding: 3.5rem 2.5rem;
+    background: var(--whiteColor);
+    border: 0.01rem solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    grid-gap: 1rem;
+    cursor: pointer;
+}
+
+.serviceCardWrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 991px){
+    .serviceCardWrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px){
+    .serviceCardWrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,30 @@
+#imgWithTextOne{
+    padding: 0 0 7.5rem;
+}
+#imgWithTextOne .container {
+	background: var(--secondaryColor);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	grid-gap: 3rem;
+	padding: 0;
+}
+#imgWithTextOne .container .left {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#imgWithTextOne .container .left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#imgWithTextOne .container .right {
+	padding: 3rem;
+}
+@media (max-width: 768px) {
+    #imgWithTextOne.container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+}

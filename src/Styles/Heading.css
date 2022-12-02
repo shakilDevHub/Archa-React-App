@@ -1,0 +1,61 @@
+/* Primary Heading start ===================== */
+h2.mainHeading{
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2.mainHeading .headingContent{
+    position: relative;
+    z-index: 5;
+}
+h2.mainHeading .headingContent::before,
+h2.mainHeading .headingContent::after{
+    content: '';
+    position: absolute;
+    width: 7rem;
+    height: 0.4rem;
+    background: var(--primaryColor);
+    top: 50%;
+}
+h2.mainHeading .headingContent::before{
+    left: 0;
+    transform: translate(-120%, -50%);
+}
+h2.mainHeading .headingContent::after{
+    right: 0;
+    transform: translate(120%, -50%);
+}
+h2.mainHeading span.bgText{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8.2rem;
+    text-transform: capitalize;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--darkColor);
+    opacity: 0.08;
+    user-select: none;
+    z-index: 1;
+}
+/* Primary Heading end ============== */
+
+/* Secondary Heading start ===================== */
+h2.secondaryHeading span{
+    text-align: left;
+    position: relative;
+    text-transform: capitalize;
+}
+h2.secondaryHeading span::before{
+    content: '';
+    position: absolute;
+    width: 7rem;
+    height: 0.4rem;
+    background: var(--primaryColor);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 105%;
+}
+/* Secondary Heading end==================== */

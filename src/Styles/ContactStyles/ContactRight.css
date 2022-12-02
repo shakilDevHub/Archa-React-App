@@ -1,0 +1,34 @@
+.contactOffice .officeCardsWrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contactOffice .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.contactOffice .card .left{
+    text-align: center;
+}
+.contactOffice .card .left img {
+	width: 4rem;
+}
+
+@media (max-width: 575px) {
+    .contactOffice .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .contactOffice .officeCardsWrapper{
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+    }
+}

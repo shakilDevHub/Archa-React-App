@@ -1,0 +1,60 @@
+#howWeWork{
+	background: var(--secondaryColor);
+}
+.workBox {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2.5rem;
+}
+.workBox .card {
+	text-align: center;
+	display: grid;
+	place-items: center;
+	grid-gap: 1rem;
+	padding: 3rem 3.5rem;
+	cursor: pointer;
+}
+.workBox .card h3 {
+	font-size: 8rem;
+	line-height: 10rem;
+	text-align: center;
+	font-family: var(--primaryFont);
+	font-weight: bold;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--darkColor);
+	opacity: 0.2;
+	user-select: none;
+}
+.workBox .card h4 {
+	font-size: 1.6rem;
+	line-height: 3rem;
+	color: var(--primaryTextColor);
+	text-transform: capitalize;
+	font-family: var(--primaryFont);
+	font-weight: 500;
+}
+.workBox .card p {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	color: var(--paraColor);
+	padding-bottom: 2.5rem;
+	font-weight: 400;
+	font-family: var(--secondaryFont);
+}
+
+
+@media (max-width: 991px) {
+    .workBox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .workBox{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2.5rem;
+    }
+}

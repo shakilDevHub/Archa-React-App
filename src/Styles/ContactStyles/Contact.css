@@ -1,0 +1,25 @@
+#contactTop .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2.5rem;
+	align-items: flex-start;
+    justify-content: center;
+}
+
+@media(max-width: 991px){
+    #contactTop .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Map start===================== */
+#map {
+    width: 100%;
+    height: 55rem;
+}
+#map iframe {
+	width: 100%;
+	height: 100%;
+    border: none;
+}
+/* Map end===================== */

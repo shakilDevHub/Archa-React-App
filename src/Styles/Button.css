@@ -1,0 +1,31 @@
+.customBtn{
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    letter-spacing: 0.15rem;
+    text-transform: capitalize;
+    padding: 1.6rem 4rem;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 0;
+    position: relative;
+    user-select: none;
+}
+.customBtn::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: var(--whiteColor);
+    top: 0;
+    right: 5px;
+    transition: 0.3s ease;
+}
+.customBtn:hover::before{
+    content: '';
+    position: absolute;
+    right: calc(100% - 10px);
+}

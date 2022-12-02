@@ -1,0 +1,12 @@
+#errorPage{
+    padding: 0;
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+}
+#errorPage img{
+    width: 100%;
+    max-width: 55rem;
+    user-select: none;
+}

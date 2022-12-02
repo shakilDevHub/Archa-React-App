@@ -1,0 +1,68 @@
+#ImgWithTextTwo .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	padding-top: 0;
+	overflow: hidden;
+}
+@media (max-width: 991px) {
+    #ImgWithTextTwo .container {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+    }
+    #ImgWithTextTwo .container div.left {
+        width: 100%;
+        height: 30rem;
+    }
+    #ImgWithTextTwo .container .right {
+		padding-left: 0 !important;
+    }
+}
+#ImgWithTextTwo div.left {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+#ImgWithTextTwo div.left img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    /* animation: imgAnim 1s linear infinite alternate; */
+	/* it will controlled in jsx */
+}
+@keyframes imgAnim {
+    0%{
+        transform: translateY(-1.5rem) scale(0.9);
+    }100%{
+        transform: translateY(1.5rem) scale(0.9);
+    }
+}
+#ImgWithTextTwo .right {
+	width: 100%;
+	padding: 2.5rem;
+	padding-left: 5rem;
+}
+#ImgWithTextTwo ul {
+	margin-bottom: 3rem;
+}
+#ImgWithTextTwo ul li {
+	display: inline-block;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	font-weight: 400;
+	font-family: var(--secondaryFont);
+	color: var(--paraColor);
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+#ImgWithTextTwo ul li span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: var(--primaryColor);
+}

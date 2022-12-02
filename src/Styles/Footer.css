@@ -1,0 +1,101 @@
+/* footer top start-------------------- */
+footer .top{
+    background: var(--footerTopColor);
+}
+footer .top .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 4rem 3rem;
+}
+footer .top .container .col{
+    width: 100%;
+    max-width: 30rem;
+}
+footer .top .container .col a.logo2{
+    margin-bottom: 2rem;
+}
+footer .top .container .col p{
+    color: var(--lightParaColor);
+}
+footer .top .container .col ul li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+footer .top .container .col ul.social a{
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: var(--primaryColor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteColor);
+    transition: 0.3s;
+}
+footer .top .container .col ul.social a:hover{
+    color: var(--primaryTextColor);
+    background: var(--whiteColor);
+}
+footer .top .container .col h3{
+    color: var(--whiteColor);
+    padding-bottom: 2rem;
+}
+footer .top .container .col ul.footerMenu li{
+    display: block;
+}
+footer .top .container .col ul.footerMenu li a,
+footer .top .container .col ul.footerMenu li span{
+    display: block;
+    color: var(--lightParaColor);
+    font-family: var(--secondaryFont);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-bottom: 0.5rem;
+    transition: 0.2s ease;
+}
+footer .top .container .col ul.footerMenu li a:hover,
+footer .top .container .col ul.footerMenu li span:hover{
+    color: var(--primaryColor);
+    transform: scale(1.15);
+    transform-origin: left center;
+}
+/* footer top end-------------------- */
+
+/* footer bottom start-------------------- */
+footer .bottom{
+    background: var(--footerBottomColor);
+}
+footer .bottom .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+footer .bottom .container span{
+    display: block;
+    color: var(--lightParaColor);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+}
+/* footer bottom end-------------------- */
+
+/***** home Section *****/
+@media (max-width: 991px) {
+    footer .top .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    footer .bottom .container{
+        flex-direction: column;
+        gap: 2.5rem 0;
+        padding: 2.5rem 0;
+    }
+    footer .top .container{
+        grid-template-columns: 1fr;
+    }
+}

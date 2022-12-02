@@ -1,0 +1,35 @@
+#gallery{
+    background: var(--whiteColor);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+}
+.imgBox {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--whiteColor);
+    overflow: hidden;
+}
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#gallery .imgBox:hover img {
+    transform: scale(1.25);
+  }
+@media (max-width: 768px) {
+    #gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    #gallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

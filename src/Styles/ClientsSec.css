@@ -1,0 +1,52 @@
+#count .container {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-gap: 5rem 3rem;
+place-items: center;
+}
+#count .container .card {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    grid-gap: 1.5rem;
+}
+#count .container .card h3 {
+    color: var(--primaryTextColor);
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    font-family: var(--primaryFont);
+}
+#count .container .card span {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-family: var(--secondaryFont);
+    color: var(--paraColor);
+}
+
+@media (max-width: 991px) {
+    #count .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    #count .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem 3rem;
+        place-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    #count .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5rem 3rem;
+        place-items: center;
+    }
+}
